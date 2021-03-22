@@ -7,6 +7,7 @@ import MailIcon from '@/assets/icons/mail.svg';
 import PhoneIcon from '@/assets/icons/phone.svg';
 import ArrowDownIcon from '@/assets/icons/arrow_down.svg';
 import HamburgerMenuIcon from '@/assets/icons/hamburger-menu.svg';
+import pages from '@/pageLinks.js';
 
 export default {
   name: 'Header',
@@ -23,6 +24,8 @@ export default {
   data() {
     return {
       mobileMenu: false,
+      pages,
+      activeDropdown: undefined,
     };
   },
   computed: {
@@ -33,6 +36,13 @@ export default {
   methods: {
     toggleMobileMenu() {
       this.mobileMenu = !this.mobileMenu;
+    },
+    toggleDropdown(pageName) {
+      if (this.activeDropdown === pageName) {
+        this.activeDropdown = undefined;
+      } else {
+        this.activeDropdown = pageName;
+      }
     },
   },
 };
@@ -80,7 +90,27 @@ export default {
           <HamburgerMenuIcon />
         </div>
         <nav :class="navigationClass">
-          <div class="dropdown" data-active="1">
+          <div
+            class="dropdown"
+            v-for="(pageLinks, pageName) in pages"
+            :key="pageName"
+            :data-active="activeDropdown === pageName ? 1 : 0"
+            @click="toggleDropdown(pageName)"
+          >
+            <div class="dropdown-title">{{ pageName }}<ArrowDownIcon /></div>
+            <div class="dropdown-content" tabindex="-1">
+              <div v-for="link in pageLinks" :key="link.path">
+                <img :src="link.imagePath" :alt="link.imageAlt" />
+                <router-link
+                  v-for="(subPageLink, subPageName) in link.links"
+                  :key="subPageName"
+                  :to="link.path + '/' + subPageLink"
+                  >{{ subPageName }}</router-link
+                >
+              </div>
+            </div>
+          </div>
+          <!-- <div class="dropdown" data-active="1">
             <div class="dropdown-title">
               Profil Serileri
               <ArrowDownIcon />
@@ -109,7 +139,7 @@ export default {
                 <a href="#">Test</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </nav>
       </div>
     </section>
@@ -229,6 +259,7 @@ export default {
     position: absolute;
     top: 100%;
     right: 0;
+    z-index: 4;
 
     display: flex !important;
     border-bottom-left-radius: 5px;
@@ -251,10 +282,14 @@ export default {
         border-left: 1px solid $color-gray;
       }
 
-      & img {
+      img {
         align-self: center;
         height: 40px;
         margin-bottom: 0.5rem;
+      }
+
+      a {
+        width: max-content;
       }
     }
   }

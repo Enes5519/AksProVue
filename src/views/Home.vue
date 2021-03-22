@@ -26,6 +26,7 @@ export default {
     return {
       current: 0,
       sliderImages: [image1, image2, image3],
+      lengthOfSlide: 0,
     };
   },
   mounted() {
