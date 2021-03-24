@@ -13,15 +13,11 @@ export default {
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
-      return require(`@/assets/images/profil-sistemleri/rescara/${
-        productPath === '' ? '' : productPath + '/'
-      }${path}`);
+      return require(`@/assets/images/profil-sistemleri/rescara/${productPath === '' ? '' : productPath + '/'}${path}`);
     },
     getCategoryNames() {
       const obj = {};
-      for (const [item, value] of Object.entries(categories).filter(
-        ([item]) => item !== ''
-      )) {
+      for (const [item, value] of Object.entries(categories).filter(([item]) => item !== '')) {
         obj[item] = value.title;
       }
 
@@ -34,11 +30,7 @@ export default {
 <template>
   <product-list :title="category.title">
     <template #category v-if="category.hasCategory">
-      <router-link
-        v-for="(name, path) in getCategoryNames()"
-        :key="name"
-        :to="'profil-sistemleri/rescara/' + path"
-      >
+      <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="'profil-sistemleri/rescara/' + path">
         {{ name }}
       </router-link>
     </template>
