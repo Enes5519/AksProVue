@@ -17,7 +17,10 @@ export default {
     },
     getCategoryNames() {
       const obj = {};
-      for (const [item, value] of Object.entries(categories).filter(([item]) => item !== '')) {
+      for (const [item, value] of Object.entries(categories)) {
+        if (item === '') {
+          continue;
+        }
         obj[item] = value.title;
       }
 
