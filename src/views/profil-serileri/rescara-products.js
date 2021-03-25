@@ -284,4 +284,27 @@ export default {
       },
     ],
   },
+  "cam-balkon-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Cam Balkon Sistemleri",
+    products: [
+      {
+        path: "rfg46.png",
+        alt: "RFG46",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/cam-balkon-sistemleri/rfg46.pdf"),
+      },
+      {
+        path: "rfg46p.png",
+        alt: "RFG46+",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/cam-balkon-sistemleri/rfg46p.pdf"),
+      },
+      {
+        path: "rsg104.png",
+        alt: "RSG104",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/cam-balkon-sistemleri/rsg104.pdf"),
+      },
+    ],
+  },
 };
