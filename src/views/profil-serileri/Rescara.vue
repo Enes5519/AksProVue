@@ -34,7 +34,7 @@ export default {
 <template>
   <product-list :title="category.title">
     <template #category v-if="category.hasCategory">
-      <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="'profil-sistemleri/rescara/' + path">
+      <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="path">
         {{ name }}
       </router-link>
     </template>
