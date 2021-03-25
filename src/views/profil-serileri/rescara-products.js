@@ -228,6 +228,24 @@ export default {
       },
     ],
   },
+  "kompozit-panel-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Kompozit Panel Sistemleri",
+    products: [
+      {
+        path: "comp50.png",
+        alt: "COMP50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kompozit-panel-sistemleri/comp50.pdf"),
+      },
+      {
+        path: "rg.png",
+        alt: "RG",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kompozit-panel-sistemleri/rg.pdf"),
+      },
+    ],
+  },
   "gunes-kiricilar": {
     hasCategory: true,
     hasBottomText: true,
@@ -304,6 +322,24 @@ export default {
         path: "rsg104.png",
         alt: "RSG104",
         to: require("@/assets/pdf/profil-sistemleri/rescara/cam-balkon-sistemleri/rsg104.pdf"),
+      },
+    ],
+  },
+  "terra-cotta-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Terra Cotta Sistemleri",
+    products: [
+      {
+        path: "rdp.png",
+        alt: "RDP",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/terra-cotta-sistemleri/rdp.pdf"),
+      },
+      {
+        path: "rtc22.png",
+        alt: "RTC22",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/terra-cotta-sistemleri/rtc22.pdf"),
       },
     ],
   },
