@@ -1,16 +1,16 @@
 <script>
-import FacebookIcon from '@/assets/icons/facebook.svg';
-import TwitterIcon from '@/assets/icons/twitter.svg';
-import InstagramIcon from '@/assets/icons/instagram.svg';
-import WhatsAppIcon from '@/assets/icons/whatsapp.svg';
-import MailIcon from '@/assets/icons/mail.svg';
-import PhoneIcon from '@/assets/icons/phone.svg';
-import ArrowDownIcon from '@/assets/icons/arrow_down.svg';
-import HamburgerMenuIcon from '@/assets/icons/hamburger-menu.svg';
-import pages from '@/pageLinks.js';
+import FacebookIcon from "@/assets/icons/facebook.svg";
+import TwitterIcon from "@/assets/icons/twitter.svg";
+import InstagramIcon from "@/assets/icons/instagram.svg";
+import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
+import MailIcon from "@/assets/icons/mail.svg";
+import PhoneIcon from "@/assets/icons/phone.svg";
+import ArrowDownIcon from "@/assets/icons/arrow_down.svg";
+import HamburgerMenuIcon from "@/assets/icons/hamburger-menu.svg";
+import pages from "@/pageLinks.js";
 
 export default {
-  name: 'Header',
+  name: "Header",
   components: {
     FacebookIcon,
     TwitterIcon,
@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     navigationClass() {
-      return this.mobileMenu ? 'active' : '';
+      return this.mobileMenu ? "active" : "";
     },
   },
   methods: {
@@ -109,36 +109,6 @@ export default {
               </div>
             </div>
           </div>
-          <!-- <div class="dropdown" data-active="1">
-            <div class="dropdown-title">
-              Profil Serileri
-              <ArrowDownIcon />
-            </div>
-            <div class="dropdown-content" tabindex="-1">
-              <div>
-                <img
-                  src="@/assets/images/logo-text.png"
-                  alt="Aks &amp; Pro Logo"
-                />
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-              </div>
-              <div>
-                <img
-                  src="@/assets/images/logo-text.png"
-                  alt="Aks &amp; Pro Logo"
-                />
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-                <a href="#">Test</a>
-              </div>
-            </div>
-          </div> -->
         </nav>
       </div>
     </section>
@@ -254,7 +224,7 @@ export default {
 
 // DESKTOP
 @media (min-width: $breakpoint-large) {
-  .dropdown[data-active='1'] > .dropdown-content {
+  .dropdown[data-active="1"] > .dropdown-content {
     position: absolute;
     top: 100%;
     right: 0;

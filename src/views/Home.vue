@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import image1 from '@/assets/images/slider/1.jpg';
-import image2 from '@/assets/images/slider/2.jpeg';
-import image3 from '@/assets/images/slider/3.png';
+import image1 from "@/assets/images/slider/1.jpg";
+import image2 from "@/assets/images/slider/2.jpeg";
+import image3 from "@/assets/images/slider/3.png";
 
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
       current: 0,

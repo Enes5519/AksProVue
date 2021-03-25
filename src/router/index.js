@@ -1,21 +1,21 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import PageNotFound from '@/views/PageNotFound';
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import PageNotFound from "@/views/PageNotFound";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     component: Home,
   },
   {
-    path: '/profil-serileri/rescara/:product?',
-    name: 'RescaraProfilSerileri',
-    component: () => import(/* webpackChunkName: "rescara-profil-serileri" */ '../views/profil-serileri/Rescara.vue'),
+    path: "/profil-serileri/rescara/:product?",
+    name: "RescaraProfilSerileri",
+    component: () => import(/* webpackChunkName: "rescara-profil-serileri" */ "../views/profil-serileri/Rescara.vue"),
   },
   {
-    path: '/:pathMatch(.*)*',
-    name: 'PageNotFound',
+    path: "/:pathMatch(.*)*",
+    name: "PageNotFound",
     component: PageNotFound,
   },
 ];

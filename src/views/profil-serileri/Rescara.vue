@@ -1,10 +1,11 @@
 <script>
-import categories from './rescara-products.js';
-import ProductList from '@/components/ProductList';
+import categories from "./rescara-products.js";
+import ProductList from "@/components/ProductList";
+import WithLink from "@/components/WithLink";
 
 export default {
-  name: 'Rescara',
-  components: { ProductList },
+  name: "Rescara",
+  components: { WithLink, ProductList },
   data() {
     return {
       category: categories[this.$route.params.product],
@@ -13,12 +14,12 @@ export default {
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
-      return require(`@/assets/images/profil-sistemleri/rescara/${productPath === '' ? '' : productPath + '/'}${path}`);
+      return require(`@/assets/images/profil-sistemleri/rescara/${productPath === "" ? "" : productPath + "/"}${path}`);
     },
     getCategoryNames() {
       const obj = {};
       for (const [item, value] of Object.entries(categories)) {
-        if (item === '') {
+        if (item === "") {
           continue;
         }
         obj[item] = value.title;
@@ -39,19 +40,21 @@ export default {
     </template>
     <template #products>
       <div class="products">
-        <template v-if="category.hasBottomText">
-          <figure v-for="product in category.products" :key="product.path">
-            <img :src="getImagePath(product.path)" :alt="product.alt" />
-            <figcaption>{{ product.alt }}</figcaption>
-          </figure>
+        <template v-for="product in category.products" :key="product.path">
+          <template v-if="category.hasBottomText">
+            <WithLink :to="'rescara/' + product.to">
+              <figure v-for="product in category.products" :key="product.path">
+                <img :src="getImagePath(product.path)" :alt="product.alt" />
+                <figcaption>{{ product.alt }}</figcaption>
+              </figure>
+            </WithLink>
+          </template>
+          <template v-else>
+            <WithLink :to="'rescara/' + product.to">
+              <img :src="getImagePath(product.path)" :alt="product.alt" />
+            </WithLink>
+          </template>
         </template>
-        <img
-          v-else
-          v-for="product in category.products"
-          :key="product.path"
-          :src="getImagePath(product.path)"
-          :alt="product.alt"
-        />
       </div>
     </template>
   </product-list>

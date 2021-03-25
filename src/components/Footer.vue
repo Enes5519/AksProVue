@@ -31,15 +31,15 @@
 </template>
 
 <script>
-import FacebookIcon from '@/assets/icons/facebook.svg';
-import TwitterIcon from '@/assets/icons/twitter.svg';
-import InstagramIcon from '@/assets/icons/instagram.svg';
-import WhatsAppIcon from '@/assets/icons/whatsapp.svg';
-import MailIcon from '@/assets/icons/mail.svg';
-import PhoneIcon from '@/assets/icons/phone.svg';
+import FacebookIcon from "@/assets/icons/facebook.svg";
+import TwitterIcon from "@/assets/icons/twitter.svg";
+import InstagramIcon from "@/assets/icons/instagram.svg";
+import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
+import MailIcon from "@/assets/icons/mail.svg";
+import PhoneIcon from "@/assets/icons/phone.svg";
 
 export default {
-  name: 'Footer',
+  name: "Footer",
   components: {
     FacebookIcon,
     TwitterIcon,

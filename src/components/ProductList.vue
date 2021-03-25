@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'ProductList',
+  name: "ProductList",
   props: {
     title: String,
   },
