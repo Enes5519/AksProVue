@@ -210,6 +210,24 @@ export default {
       },
     ],
   },
+  "skylight-isiklik-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Skylight Işıklık Sistemleri",
+    products: [
+      {
+        path: "rsk50.png",
+        alt: "RSK50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/skylight-isiklik-sistemleri/rsk50.pdf"),
+      },
+      {
+        path: "sky65.png",
+        alt: "SKY65",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/skylight-isiklik-sistemleri/sky65.pdf"),
+      },
+    ],
+  },
   "korkuluk-sistemleri": {
     hasCategory: true,
     hasBottomText: true,

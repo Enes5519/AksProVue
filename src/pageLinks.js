@@ -26,6 +26,10 @@ const PAGES = [
             to: "ofis-bolme-sistemleri",
           },
           {
+            name: "Skylight Işıklık Sistemleri",
+            to: "skylight-isiklik-sistemleri",
+          },
+          {
             name: "Diğer",
             to: "",
           },
