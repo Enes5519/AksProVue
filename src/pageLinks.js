@@ -17,6 +17,10 @@ const PAGES = [
             name: "Sürme ve Kaldırsür Sistemleri",
             to: "surme-ve-kaldirsur-sistemleri",
           },
+          {
+            name: "Giydirme Cephe Sistemleri",
+            to: "giydirme-cephe-sistemleri",
+          },
         ],
       },
     ],

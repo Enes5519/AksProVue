@@ -149,4 +149,32 @@ export default {
       },
     ],
   },
+  "giydirme-cephe-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Giydirme Cephe Sistemleri",
+    products: [
+      {
+        path: "e50.png",
+        alt: "E50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/giydirme-cephe-sistemleri/e50.pdf"),
+      },
+      {
+        path: "r50.png",
+        alt: "R50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/giydirme-cephe-sistemleri/r50.pdf"),
+      },
+      {
+        path: "r50tt.png",
+        alt: "R50TT",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/giydirme-cephe-sistemleri/r50tt.pdf"),
+      },
+      {
+        path: "rt50.png",
+        alt: "RT50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/giydirme-cephe-sistemleri/rt50.pdf"),
+      },
+    ],
+  },
 };
