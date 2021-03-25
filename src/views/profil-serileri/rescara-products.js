@@ -210,4 +210,42 @@ export default {
       },
     ],
   },
+  "korkuluk-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Korkuluk Sistemleri",
+    products: [
+      {
+        path: "ac40.png",
+        alt: "AC40",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/ac40.pdf"),
+      },
+      {
+        path: "as38.png",
+        alt: "AS38",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/as38.pdf"),
+      },
+      {
+        path: "as40.png",
+        alt: "AS40",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/as40.pdf"),
+      },
+      {
+        path: "as50.png",
+        alt: "AS50",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/as50.pdf"),
+      },
+      {
+        path: "rb90.png",
+        alt: "RB90",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/rb90.pdf"),
+      },
+      {
+        path: "rb120.png",
+        alt: "RB120",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/korkuluk-sistemleri/rb120.pdf"),
+      },
+    ],
+  },
 };
