@@ -11,10 +11,7 @@ const routes = [
   {
     path: '/profil-serileri/rescara/:product?',
     name: 'RescaraProfilSerileri',
-    component: () =>
-      import(
-        /* webpackChunkName: "rescara-profil-serileri" */ '../views/profil-serileri/Rescara.vue'
-      ),
+    component: () => import(/* webpackChunkName: "rescara-profil-serileri" */ '../views/profil-serileri/Rescara.vue'),
   },
   {
     path: '/:pathMatch(.*)*',

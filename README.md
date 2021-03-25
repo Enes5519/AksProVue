@@ -1,4 +1,4 @@
-# aksprovue
+# akspro
 
 ## Project setup
 ```

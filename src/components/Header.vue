@@ -59,10 +59,7 @@ export default {
           <a href="https://twitter.com/AksPro55" target="_blank">
             <TwitterIcon />
           </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=+905333736155"
-            target="_blank"
-          >
+          <a href="https://api.whatsapp.com/send?phone=+905333736155" target="_blank">
             <WhatsAppIcon />
           </a>
           <a href="https://www.instagram.com/akspro55/" target="_blank">
@@ -265,8 +262,7 @@ export default {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: $color-white;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 
     & a:hover {
       color: $color-primary;
