@@ -14,6 +14,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "rescara-profil-serileri" */ "../views/profil-serileri/Rescara.vue"),
   },
   {
+    path: "/profil-serileri/almin/:product?",
+    name: "AlminProfilSerileri",
+    component: () => import(/* webpackChunkName: "almin-profil-serileri" */ "../views/profil-serileri/Almin.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "PageNotFound",
     component: PageNotFound,

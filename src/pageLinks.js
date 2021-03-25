@@ -35,6 +35,39 @@ const PAGES = [
           },
         ],
       },
+      {
+        image: {
+          path: require("@/assets/images/companies/almin-logo.png"),
+          alt: "Almin Logo",
+        },
+        path: "/profil-serileri/almin",
+        links: [
+          {
+            name: "Aldoks Profiller",
+            to: "aldoks-profiller",
+          },
+          {
+            name: "Asansör Profilleri",
+            to: "asansor-profilleri",
+          },
+          {
+            name: "Aydınlatma Profilleri",
+            to: "aydinlatma-profilleri",
+          },
+          {
+            name: "C60 Sistem Profilleri",
+            to: "c60-sistem-profilleri",
+          },
+          {
+            name: "Çadır ve Tente Profilleri",
+            to: "cadir-ve-tente-profilleri",
+          },
+          {
+            name: "Diğer",
+            to: "",
+          },
+        ],
+      },
     ],
   },
 ];
