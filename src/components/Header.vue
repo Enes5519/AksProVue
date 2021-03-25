@@ -89,21 +89,23 @@ export default {
         <nav :class="navigationClass">
           <div
             class="dropdown"
-            v-for="(pageLinks, pageName) in pages"
-            :key="pageName"
-            :data-active="activeDropdown === pageName ? 1 : 0"
-            @click="toggleDropdown(pageName)"
+            v-for="(page, index) in pages"
+            :key="index"
+            :data-active="activeDropdown === page.name ? 1 : 0"
+            @click="toggleDropdown(page.name)"
           >
-            <div class="dropdown-title">{{ pageName }}<ArrowDownIcon /></div>
+            <div class="dropdown-title">
+              {{ page.name }}
+              <ArrowDownIcon />
+            </div>
             <div class="dropdown-content" tabindex="-1">
-              <div v-for="link in pageLinks" :key="link.path">
-                <img :src="link.imagePath" :alt="link.imageAlt" />
-                <router-link
-                  v-for="(subPageLink, subPageName) in link.links"
-                  :key="subPageName"
-                  :to="link.path + '/' + subPageLink"
-                  >{{ subPageName }}</router-link
-                >
+              <div v-for="subPage in page.subPages" :key="subPage.path">
+                <router-link :to="subPage.path">
+                  <img :src="subPage.image.path" :alt="subPage.image.alt" />
+                </router-link>
+                <router-link v-for="link in subPage.links" :key="link.to" :to="subPage.path + '/' + link.to">
+                  {{ link.name }}
+                </router-link>
               </div>
             </div>
           </div>
@@ -312,6 +314,7 @@ export default {
 
         & > a {
           margin-left: unset;
+
           & > span {
             display: none;
           }
