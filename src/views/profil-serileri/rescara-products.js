@@ -177,4 +177,37 @@ export default {
       },
     ],
   },
+  "ofis-bolme-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Ofis Bölme Sistemleri",
+    products: [
+      {
+        path: "rd55.png",
+        alt: "RD55",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/ofis-bolme-sistemleri/rd55.pdf"),
+      },
+      {
+        path: "ro26.png",
+        alt: "RO26",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/ofis-bolme-sistemleri/ro26.pdf"),
+      },
+      {
+        path: "ro73.png",
+        alt: "RO73",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/ofis-bolme-sistemleri/ro73.pdf"),
+      },
+      {
+        path: "ro73p.png",
+        alt: "RO73+",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/ofis-bolme-sistemleri/ro73p.pdf"),
+      },
+      {
+        path: "ro77.png",
+        alt: "RO77",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/ofis-bolme-sistemleri/ro77.pdf"),
+      },
+    ],
+  },
 };

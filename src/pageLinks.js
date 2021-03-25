@@ -21,6 +21,14 @@ const PAGES = [
             name: "Giydirme Cephe Sistemleri",
             to: "giydirme-cephe-sistemleri",
           },
+          {
+            name: "Ofis Bölme Sistemleri",
+            to: "ofis-bolme-sistemleri",
+          },
+          {
+            name: "Diğer",
+            to: "",
+          },
         ],
       },
     ],
