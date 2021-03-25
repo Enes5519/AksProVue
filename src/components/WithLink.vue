@@ -1,8 +1,15 @@
 <template>
   <template v-if="to !== undefined">
-    <router-link :to="to">
-      <slot />
-    </router-link>
+    <template v-if="useRouter">
+      <router-link :to="to">
+        <slot />
+      </router-link>
+    </template>
+    <template v-else>
+      <a :href="to" target="_blank">
+        <slot />
+      </a>
+    </template>
   </template>
   <template v-else>
     <slot />
@@ -12,6 +19,6 @@
 <script>
 export default {
   name: "WithLink",
-  props: ["to"],
+  props: ["to", "useRouter"],
 };
 </script>

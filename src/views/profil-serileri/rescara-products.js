@@ -2,6 +2,7 @@ export default {
   "": {
     hasCategory: false,
     hasBottomText: false,
+    useRouter: true,
     title: "Rescara Profil Serileri",
     products: [
       {
@@ -19,7 +20,7 @@ export default {
       {
         path: "kapi-ve-pencere-sistemleri.png",
         alt: "Kapı ve Pencere Sistemleri",
-        to: "kapi-ve-pencere-sistemleri",
+        to: "rescara/kapi-ve-pencere-sistemleri",
       },
       {
         path: "kompozit-panel-sistemleri.png",
@@ -50,51 +51,63 @@ export default {
   "kapi-ve-pencere-sistemleri": {
     hasCategory: true,
     hasBottomText: true,
+    useRouter: false,
     title: "Kapı ve Pencere Sistemleri",
     products: [
       {
         path: "rw46.png",
         alt: "RW46",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rw-46.pdf"),
       },
       {
         path: "rw55.png",
         alt: "RW55",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rw-55.pdf"),
       },
       {
         path: "rw55plus.png",
         alt: "RW55+",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rw-55p.pdf"),
       },
       {
         path: "rw56.png",
         alt: "RW56",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rw-56.pdf"),
       },
       {
         path: "rw60.png",
         alt: "RW60",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rw-60.pdf"),
       },
       {
         path: "rwt55.png",
         alt: "RWT55",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwt-55.pdf"),
       },
       {
         path: "rwt55plus.png",
         alt: "RWT55+",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwt-55p.pdf"),
       },
       {
         path: "rwt64.png",
         alt: "RWT64",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwt-64.pdf"),
       },
       {
         path: "rwt67.png",
         alt: "RWT67",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwt-67.pdf"),
       },
       {
         path: "rwt75.png",
         alt: "RWT75",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwt-75.pdf"),
       },
       {
         path: "rwtp64.png",
         alt: "RWTP64",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/kapi-ve-pencere-sistemleri/rwtp-64.pdf"),
       },
     ],
   },

@@ -42,15 +42,15 @@ export default {
       <div class="products">
         <template v-for="product in category.products" :key="product.path">
           <template v-if="category.hasBottomText">
-            <WithLink :to="'rescara/' + product.to">
-              <figure v-for="product in category.products" :key="product.path">
+            <WithLink :to="product.to" :useRouter="category.useRouter">
+              <figure>
                 <img :src="getImagePath(product.path)" :alt="product.alt" />
                 <figcaption>{{ product.alt }}</figcaption>
               </figure>
             </WithLink>
           </template>
           <template v-else>
-            <WithLink :to="'rescara/' + product.to">
+            <WithLink :to="product.to" :useRouter="category.useRouter">
               <img :src="getImagePath(product.path)" :alt="product.alt" />
             </WithLink>
           </template>
