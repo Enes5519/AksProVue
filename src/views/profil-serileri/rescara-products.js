@@ -228,6 +228,24 @@ export default {
       },
     ],
   },
+  "gunes-kiricilar": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Güneş Kırıcılar",
+    products: [
+      {
+        path: "rsc40.png",
+        alt: "RSC40",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/gunes-kiricilar/rsc40.pdf"),
+      },
+      {
+        path: "rss.png",
+        alt: "RSS",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/gunes-kiricilar/rss.pdf"),
+      },
+    ],
+  },
   "korkuluk-sistemleri": {
     hasCategory: true,
     hasBottomText: true,
