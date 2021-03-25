@@ -111,4 +111,42 @@ export default {
       },
     ],
   },
+  "surme-ve-kaldirsur-sistemleri": {
+    hasCategory: true,
+    hasBottomText: true,
+    useRouter: false,
+    title: "Sürme ve Kaldırsür Sistemleri",
+    products: [
+      {
+        path: "rms45.png",
+        alt: "RMS45",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rms45.pdf"),
+      },
+      {
+        path: "rs58.png",
+        alt: "RS58",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rs58.pdf"),
+      },
+      {
+        path: "rst58.png",
+        alt: "RST58",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rst58.pdf"),
+      },
+      {
+        path: "rs83.png",
+        alt: "RS83",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rst58.pdf"),
+      },
+      {
+        path: "rst83.png",
+        alt: "RST83",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rst83.pdf"),
+      },
+      {
+        path: "rst116.png",
+        alt: "RST116",
+        to: require("@/assets/pdf/profil-sistemleri/rescara/surme-ve-kaldirsur-sistemleri/rst116.pdf"),
+      },
+    ],
+  },
 };

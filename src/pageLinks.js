@@ -13,6 +13,10 @@ const PAGES = [
             name: "Kapı ve Pencere Sistemleri",
             to: "kapi-ve-pencere-sistemleri",
           },
+          {
+            name: "Sürme ve Kaldırsür Sistemleri",
+            to: "surme-ve-kaldirsur-sistemleri",
+          },
         ],
       },
     ],
