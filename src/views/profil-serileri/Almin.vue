@@ -2,6 +2,7 @@
 import categories from "./almin-products.js";
 import ProductList from "@/components/ProductList";
 import ZoomImage from "@/components/ZoomImage";
+import getCategoryNames from "@/utils/getCategoryNames";
 
 export default {
   name: "Almin",
@@ -18,21 +19,15 @@ export default {
       this.$router.replace("/404");
     }
   },
+  computed: {
+    categoryNames() {
+      return getCategoryNames(categories);
+    },
+  },
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
       return require(`@/assets/images/profil-sistemleri/almin/${productPath + "/"}${path}.jpg`);
-    },
-    getCategoryNames() {
-      const obj = {};
-      for (const [item, value] of Object.entries(categories)) {
-        if (item === "") {
-          continue;
-        }
-        obj[item] = value.title;
-      }
-
-      return obj;
     },
     setZoomImage(zoomImagePath, zoomImageAlt) {
       this.zoomImagePath = zoomImagePath;
@@ -45,7 +40,7 @@ export default {
 <template>
   <product-list v-if="category !== undefined" :title="category.title">
     <template #category>
-      <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="path">
+      <router-link v-for="(name, path) in categoryNames" :key="name" :to="path">
         {{ name }}
       </router-link>
     </template>

@@ -2,6 +2,7 @@
 import categories from "./rescara-products.js";
 import ProductList from "@/components/ProductList";
 import WithLink from "@/components/WithLink";
+import getCategoryNames from "@/utils/getCategoryNames";
 
 export default {
   name: "Rescara",
@@ -21,16 +22,10 @@ export default {
       const productPath = this.$route.params.product;
       return require(`@/assets/images/profil-sistemleri/rescara/${productPath === "" ? "" : productPath + "/"}${path}`);
     },
-    getCategoryNames() {
-      const obj = {};
-      for (const [item, value] of Object.entries(categories)) {
-        if (item === "") {
-          continue;
-        }
-        obj[item] = value.title;
-      }
-
-      return obj;
+  },
+  computed: {
+    categoryNames() {
+      return getCategoryNames(categories);
     },
   },
 };
@@ -39,7 +34,7 @@ export default {
 <template>
   <product-list v-if="category !== undefined" :title="category.title">
     <template #category v-if="category.hasCategory">
-      <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="path">
+      <router-link v-for="(name, path) in categoryNames" :key="name" :to="path">
         {{ name }}
       </router-link>
     </template>
