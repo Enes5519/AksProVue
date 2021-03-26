@@ -87,6 +87,7 @@ export default {
           <HamburgerMenuIcon />
         </div>
         <nav :class="navigationClass">
+          <router-link to="/">Anasayfa</router-link>
           <div
             class="dropdown"
             v-for="(page, index) in pages"
@@ -209,6 +210,19 @@ export default {
       & > nav {
         height: 100%;
         @include flex-space-between;
+
+        & > a {
+          height: 100%;
+          user-select: none;
+          @include flex-center;
+          font-size: 1.2rem;
+          color: $color-black;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
 
         & > .dropdown {
           margin-left: 2rem;
