@@ -13,8 +13,8 @@ export default {
     },
     {
       path: "firecry-fr-silicon.jpg",
-      alt: "Firecry FR",
-      to: "firecry-fr",
+      alt: "Firecryl FR",
+      to: "firecryl-fr",
     },
     {
       path: "silirub-no5-silicon.jpg",
@@ -34,7 +34,7 @@ export default {
     {
       path: "soudaflex-40fc-silicon.jpg",
       alt: "Soudaflex 40FC",
-      to: "soudaflex-40fc",
+      to: "soudaflex-40-fc",
     },
     {
       path: "soudal-fix-all-silicon.jpg",

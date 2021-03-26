@@ -42,6 +42,41 @@ const routes = [
       ),
   },
   {
+    path: "/aksesuarlar/soudal/butyrub",
+    name: "Butyrub",
+    component: () => import(/* webpackChunkName: "butyrub" */ "../views/aksesuarlar/soudal/Butyrub.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/firecryl-fr",
+    name: "FirecrylFr",
+    component: () => import(/* webpackChunkName: "firecryl-fr" */ "../views/aksesuarlar/soudal/FirecrylFr.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/fix-all-crystal",
+    name: "FixAllCrystal",
+    component: () => import(/* webpackChunkName: "fix-all-crystal" */ "../views/aksesuarlar/soudal/FixAllCrystal.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/silirub-no5",
+    name: "SilirubNO5",
+    component: () => import(/* webpackChunkName: "silirub-no5" */ "../views/aksesuarlar/soudal/SilirubNO5.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/silirub-s",
+    name: "SilirubS",
+    component: () => import(/* webpackChunkName: "silirub-s" */ "../views/aksesuarlar/soudal/SilirubS.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/silirub-ws",
+    name: "SilirubWS",
+    component: () => import(/* webpackChunkName: "silirub-ws" */ "../views/aksesuarlar/soudal/SilirubWS.vue"),
+  },
+  {
+    path: "/aksesuarlar/soudal/soudaflex-40-fc",
+    name: "Soudaflex40FC",
+    component: () => import(/* webpackChunkName: "soudaflex-40-fc" */ "../views/aksesuarlar/soudal/Soudaflex40FC.vue"),
+  },
+  {
     path: "/404",
     name: "PageNotFound",
     component: PageNotFound,
