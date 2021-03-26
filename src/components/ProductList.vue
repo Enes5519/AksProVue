@@ -48,10 +48,6 @@ export default {
     grid-gap: 1rem 2rem;
     width: 100%;
 
-    &[small] {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
     & a:focus {
       outline: none;
 
