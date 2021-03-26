@@ -137,6 +137,19 @@ export default [
           },
         ],
       },
+      {
+        image: {
+          path: require("@/assets/images/companies/soudal-logo.png"),
+          alt: "Soudal Logo",
+        },
+        path: "/aksesuarlar/soudal",
+        links: [
+          {
+            name: "Silikonlar",
+            to: "",
+          },
+        ],
+      },
     ],
   },
 ];

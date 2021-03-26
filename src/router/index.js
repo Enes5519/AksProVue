@@ -29,6 +29,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "akspro-aksesuarlar" */ "../views/aksesuarlar/AksPro.vue"),
   },
   {
+    path: "/aksesuarlar/soudal",
+    name: "SoudalAksesuarlar",
+    component: () => import(/* webpackChunkName: "soudal-aksesuarlar" */ "../views/aksesuarlar/Soudal.vue"),
+  },
+  {
     path: "/404",
     name: "PageNotFound",
     component: PageNotFound,
