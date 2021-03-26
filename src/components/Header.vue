@@ -100,10 +100,15 @@ export default {
             </div>
             <div class="dropdown-content" tabindex="-1">
               <div v-for="subPage in page.subPages" :key="subPage.path">
-                <router-link :to="subPage.path">
+                <router-link :to="subPage.path" class="banner">
                   <img :src="subPage.image.path" :alt="subPage.image.alt" />
                 </router-link>
-                <router-link v-for="link in subPage.links" :key="link.to" :to="subPage.path + '/' + link.to">
+                <router-link
+                  class="navLink"
+                  v-for="link in subPage.links"
+                  :key="link.to"
+                  :to="subPage.path + '/' + link.to"
+                >
                   {{ link.name }}
                 </router-link>
               </div>
@@ -190,6 +195,7 @@ export default {
         @include flex-space-between;
 
         & > .dropdown {
+          margin-left: 2rem;
           height: 100%;
           position: relative;
           user-select: none;
@@ -250,13 +256,15 @@ export default {
         border-left: 1px solid $color-gray;
       }
 
-      img {
+      .banner {
         align-self: center;
-        height: 40px;
-        margin-bottom: 0.5rem;
+        & > img {
+          height: 40px;
+        }
       }
 
-      a {
+      .navLink {
+        margin-top: 0.5rem;
         width: max-content;
       }
     }
