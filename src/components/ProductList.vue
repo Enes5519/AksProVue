@@ -1,6 +1,6 @@
 <template>
   <main class="Product container">
-    <aside class="Product-category" v-if="hasCategory">
+    <aside class="Product-category" v-if="$slots.category !== undefined">
       <slot name="category" />
     </aside>
     <section class="Product-list">
@@ -16,14 +16,6 @@ export default {
   name: "ProductList",
   props: {
     title: String,
-  },
-  data() {
-    return {
-      hasCategory: false,
-    };
-  },
-  beforeMount() {
-    this.hasCategory = this.$slots.category !== undefined;
   },
 };
 </script>

@@ -23,7 +23,7 @@ export default {
         to: "rescara/kapi-ve-pencere-sistemleri",
       },
       {
-        path: "kompozit-panel-sistemleri.png",
+        path: "kompozit-paneller-sistemleri.png",
         alt: "Kompozit Panel Sistemleri",
       },
       {

@@ -1,4 +1,4 @@
-const PAGES = [
+export default [
   {
     name: "Profil Serileri",
     subPages: [
@@ -70,5 +70,35 @@ const PAGES = [
       },
     ],
   },
+  {
+    name: "Kompozit Paneller",
+    subPages: [
+      {
+        image: {
+          path: require("@/assets/images/companies/naturalbond-logo.png"),
+          alt: "Naturalbond Logo",
+        },
+        path: "/kompozit-paneller/naturalbond",
+        links: [
+          {
+            name: "Asaş Kompozit Panel",
+            to: "",
+          },
+        ],
+      },
+      {
+        image: {
+          path: require("@/assets/images/companies/akpa-logo.png"),
+          alt: "Akpa Logo",
+        },
+        path: "/kompozit-paneller/akpa",
+        links: [
+          {
+            name: "Akpa Kompozit Panel",
+            to: "",
+          },
+        ],
+      },
+    ],
+  },
 ];
-export default PAGES;
