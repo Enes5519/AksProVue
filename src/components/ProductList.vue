@@ -22,13 +22,6 @@ export default {
 
 <style lang="scss">
 .Product {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  min-height: 61%;
-
   & > &-category {
     display: flex;
     flex-direction: column;
@@ -46,53 +39,6 @@ export default {
 
     & + .Product-list {
       margin-left: 2rem;
-    }
-  }
-
-  & > &-info,
-  & > &-list {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-
-    & > .title {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      line-height: 1;
-
-      & + hr {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-color: $color-black;
-      }
-    }
-  }
-
-  & > &-info > p + table {
-    margin-top: 2rem;
-  }
-
-  & > &-info > table {
-    border-collapse: collapse;
-    width: 100%;
-
-    & > thead {
-      background-color: $color-gray;
-      color: $color-dark-gray;
-    }
-
-    th {
-      font-weight: 500;
-    }
-
-    tr:hover {
-      background-color: $color-gray;
-    }
-
-    td,
-    th {
-      border: 1px solid $color-border;
-      padding: 0.5rem;
     }
   }
 
@@ -127,9 +73,6 @@ export default {
 
 @media (max-width: $breakpoint-large) {
   .Product {
-    flex-direction: column;
-    align-items: center;
-
     & > &-category {
       order: 2;
       margin-top: 1rem;

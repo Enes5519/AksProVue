@@ -34,6 +34,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "soudal-aksesuarlar" */ "../views/aksesuarlar/Soudal.vue"),
   },
   {
+    path: "/aksesuarlar/soudal/acryrub-silikonize-mastik",
+    name: "AcryrubSilikonizeMastik",
+    component: () =>
+      import(
+        /* webpackChunkName: "acryrub-silikonize-mastik" */ "../views/aksesuarlar/soudal/AcryrybSilikonizeMastik.vue"
+      ),
+  },
+  {
     path: "/404",
     name: "PageNotFound",
     component: PageNotFound,
