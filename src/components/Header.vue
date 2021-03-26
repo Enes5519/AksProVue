@@ -281,6 +281,7 @@ export default {
       flex-direction: column;
       align-items: flex-start;
       padding: 1.5rem;
+      min-width: 200px;
 
       &:not(:first-child) {
         border-left: 1px solid $color-gray;
@@ -343,6 +344,7 @@ export default {
 
       & > nav {
         display: none;
+        z-index: 9;
 
         &.active {
           position: absolute;
