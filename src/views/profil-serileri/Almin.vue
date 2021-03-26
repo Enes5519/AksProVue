@@ -1,13 +1,16 @@
 <script>
 import categories from "./almin-products.js";
 import ProductList from "@/components/ProductList";
+import ZoomImage from "@/components/ZoomImage";
 
 export default {
   name: "Almin",
-  components: { ProductList },
+  components: { ZoomImage, ProductList },
   data() {
     return {
       category: categories[this.$route.params.product],
+      zoomImagePath: "",
+      zoomImageAlt: "",
     };
   },
   methods: {
@@ -26,6 +29,10 @@ export default {
 
       return obj;
     },
+    setZoomImage(zoomImagePath, zoomImageAlt) {
+      this.zoomImagePath = zoomImagePath;
+      this.zoomImageAlt = zoomImageAlt;
+    },
   },
 };
 </script>
@@ -40,9 +47,14 @@ export default {
     <template #products v-if="$route.params.product !== ''">
       <div class="products">
         <template v-for="productIndex in category.productCount" :key="productIndex">
-          <img :src="getImagePath(productIndex)" :alt="category.imageAlt" />
+          <img
+            :src="getImagePath(productIndex)"
+            :alt="category.imageAlt"
+            @click="setZoomImage(getImagePath(productIndex), category.imageAlt)"
+          />
         </template>
       </div>
+      <ZoomImage :path="zoomImagePath" :alt="zoomImageAlt" />
     </template>
   </product-list>
 </template>
