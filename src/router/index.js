@@ -24,9 +24,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "kompozit-paneller" */ "../views/kompozit-paneller/KompozitPanel.vue"),
   },
   {
-    path: "/aksesuarlar/alumet/:product",
-    name: "AlumetAksesuarlar",
-    component: () => import(/* webpackChunkName: "alumet-aksesuarlar" */ "../views/aksesuarlar/Alumet.vue"),
+    path: "/aksesuarlar/akspro/:product",
+    name: "AksProAksesuarlar",
+    component: () => import(/* webpackChunkName: "akspro-aksesuarlar" */ "../views/aksesuarlar/AksPro.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

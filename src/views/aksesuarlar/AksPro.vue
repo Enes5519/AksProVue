@@ -1,5 +1,5 @@
 <script>
-import categories from "./alumet.js";
+import categories from "./akspro.js";
 import ProductList from "@/components/ProductList";
 import ZoomImage from "@/components/ZoomImage";
 

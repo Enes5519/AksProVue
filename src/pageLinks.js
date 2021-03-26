@@ -106,10 +106,10 @@ export default [
     subPages: [
       {
         image: {
-          path: require("@/assets/images/companies/alumet-logo.png"),
-          alt: "Alumet Logo",
+          path: require("@/assets/images/logo-text.png"),
+          alt: "Aks & Pro Logo",
         },
-        path: "/aksesuarlar/alumet",
+        path: "/aksesuarlar/akspro",
         links: [
           {
             name: "Cam Kapı Aksesuarları",
