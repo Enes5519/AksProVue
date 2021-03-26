@@ -1,20 +1,3 @@
-<template>
-  <div class="carousel">
-    <div
-      class="carousel-cell"
-      v-for="(image, index) in sliderImages"
-      :key="index"
-      :style="{ left: getLeft(index) }"
-      @mouseover="removeInterval"
-      @mouseout="createInterval"
-    >
-      <img :src="image" alt="Aks &amp; Pro" />
-    </div>
-    <div class="navigation-back" @click="navigateBack">&lt;</div>
-    <div class="navigation-next" @click="navigateNext">&gt;</div>
-  </div>
-</template>
-
 <script>
 import image1 from "@/assets/images/slider/1.jpg";
 import image2 from "@/assets/images/slider/2.jpeg";
@@ -65,6 +48,23 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="carousel">
+    <div
+      class="carousel-cell"
+      v-for="(image, index) in sliderImages"
+      :key="index"
+      :style="{ left: getLeft(index) }"
+      @mouseover="removeInterval"
+      @mouseout="createInterval"
+    >
+      <img :src="image" alt="Aks &amp; Pro" />
+    </div>
+    <div class="navigation-back" @click="navigateBack">&lt;</div>
+    <div class="navigation-next" @click="navigateNext">&gt;</div>
+  </div>
+</template>
 
 <style lang="scss">
 .carousel {
