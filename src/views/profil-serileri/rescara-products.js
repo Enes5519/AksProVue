@@ -8,43 +8,52 @@ export default {
       {
         path: "giydirme-cephe-sistemleri.png",
         alt: "Giydirme Cephe Sistemleri",
+        to: "giydirme-cephe-sistemleri",
       },
       {
-        path: "granit-cephe-sistemleri.png",
-        alt: "Granit Cephe Sistemleri",
+        path: "cam-balkon-sistemleri.png",
+        alt: "Cam Balkon Sistemleri",
+        to: "cam-balkon-sistemleri",
       },
       {
         path: "gunes-kiricilar.png",
         alt: "Güneş Kırıcılar Sistemleri",
+        to: "gunes-kiricilar",
       },
       {
         path: "kapi-ve-pencere-sistemleri.png",
         alt: "Kapı ve Pencere Sistemleri",
-        to: "rescara/kapi-ve-pencere-sistemleri",
+        to: "kapi-ve-pencere-sistemleri",
       },
       {
-        path: "kompozit-paneller-sistemleri.png",
+        path: "kompozit-panel-sistemleri.png",
         alt: "Kompozit Panel Sistemleri",
+        to: "kompozit-panel-sistemleri",
       },
       {
         path: "korkuluk-sistemleri.png",
         alt: "Korkuluk Sistemleri",
+        to: "korkuluk-sistemleri",
       },
       {
         path: "ofis-bolme-sistemleri.png",
         alt: "Ofis Bölme Sistemleri",
+        to: "ofis-bolme-sistemleri",
       },
       {
         path: "skylight-isik-sistemleri.png",
-        alt: "Skylight Işık Sistemleri",
+        alt: "Skylight Işıklık Sistemleri",
+        to: "skylight-isiklik-sistemleri",
       },
       {
         path: "surme-ve-kaldirsur-sistemleri.png",
         alt: "Sürme ve Kaldırsür Sistemleri",
+        to: "surme-ve-kaldirsur-sistemleri",
       },
       {
         path: "terra-cotta-sistemleri.png",
         alt: "Terra Cotta Sistemleri",
+        to: "terra-cotta-sistemleri",
       },
     ],
   },
