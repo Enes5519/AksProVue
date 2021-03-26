@@ -101,4 +101,42 @@ export default [
       },
     ],
   },
+  {
+    name: "Aksesuarlar",
+    subPages: [
+      {
+        image: {
+          path: require("@/assets/images/companies/alumet-logo.png"),
+          alt: "Alumet Logo",
+        },
+        path: "/aksesuarlar/alumet",
+        links: [
+          {
+            name: "Cam Kapı Aksesuarları",
+            to: "cam-kapi-aksesuarlari",
+          },
+          {
+            name: "Ofis Kapı Kolları",
+            to: "ofis-kapi-kollari",
+          },
+          {
+            name: "Basma Kapı Kolları",
+            to: "basma-kapi-kollari",
+          },
+          {
+            name: "Cephe ve Pencere Kolları",
+            to: "cephe-ve-pencere-kollari",
+          },
+          {
+            name: "Menteşeler",
+            to: "menteseler",
+          },
+          {
+            name: "Daha fazlası",
+            to: "",
+          },
+        ],
+      },
+    ],
+  },
 ];

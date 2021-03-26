@@ -24,6 +24,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "kompozit-paneller" */ "../views/kompozit-paneller/KompozitPanel.vue"),
   },
   {
+    path: "/aksesuarlar/alumet/:product",
+    name: "AlumetAksesuarlar",
+    component: () => import(/* webpackChunkName: "alumet-aksesuarlar" */ "../views/aksesuarlar/Alumet.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "PageNotFound",
     component: PageNotFound,
