@@ -13,6 +13,11 @@ export default {
       zoomImageAlt: "",
     };
   },
+  beforeCreate() {
+    if (!categories[this.$route.params.product]) {
+      this.$router.replace("/404");
+    }
+  },
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
@@ -38,13 +43,13 @@ export default {
 </script>
 
 <template>
-  <product-list :title="category.title">
+  <product-list v-if="category !== undefined" :title="category.title">
     <template #category>
       <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="path">
         {{ name }}
       </router-link>
     </template>
-    <template #products v-if="$route.params.product === ''">
+    <template #products v-if="$route.params.product !== ''">
       <div class="products">
         <template v-for="product in category.products || category.productCount" :key="product.path">
           <template v-if="category.productCount === undefined">

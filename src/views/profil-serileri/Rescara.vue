@@ -11,6 +11,11 @@ export default {
       category: categories[this.$route.params.product],
     };
   },
+  beforeCreate() {
+    if (!categories[this.$route.params.product]) {
+      this.$router.replace("/404");
+    }
+  },
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
@@ -32,7 +37,7 @@ export default {
 </script>
 
 <template>
-  <product-list :title="category.title">
+  <product-list v-if="category !== undefined" :title="category.title">
     <template #category v-if="category.hasCategory">
       <router-link v-for="(name, path) in getCategoryNames()" :key="name" :to="path">
         {{ name }}

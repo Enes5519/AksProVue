@@ -29,9 +29,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "akspro-aksesuarlar" */ "../views/aksesuarlar/AksPro.vue"),
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: "/404",
     name: "PageNotFound",
     component: PageNotFound,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: "/404",
   },
 ];
 
