@@ -51,6 +51,7 @@ export default {
             :src="getImagePath(productIndex)"
             :alt="category.imageAlt"
             @click="setZoomImage(getImagePath(productIndex), category.imageAlt)"
+            data-can-large=""
           />
         </template>
       </div>
