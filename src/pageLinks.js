@@ -139,6 +139,20 @@ export default [
       },
       {
         image: {
+          path: require("@/assets/images/companies/akpa-logo.png"),
+          alt: "Akpa Logo",
+        },
+        newTab: true,
+        path: require("@/assets/pdf/aksesuarlar/akpa-kupeste-katalogu.pdf"),
+        links: [
+          {
+            name: "Küpeşte Kataloğu",
+            to: "",
+          },
+        ],
+      },
+      {
+        image: {
           path: require("@/assets/images/companies/soudal-logo.png"),
           alt: "Soudal Logo",
         },

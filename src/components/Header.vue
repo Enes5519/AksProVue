@@ -100,17 +100,33 @@ export default {
             </div>
             <div class="dropdown-content" tabindex="-1">
               <div v-for="subPage in page.subPages" :key="subPage.path">
-                <router-link :to="subPage.path" class="banner">
-                  <img :src="subPage.image.path" :alt="subPage.image.alt" />
-                </router-link>
-                <router-link
-                  class="navLink"
-                  v-for="link in subPage.links"
-                  :key="link.to"
-                  :to="subPage.path + '/' + link.to"
-                >
-                  {{ link.name }}
-                </router-link>
+                <template v-if="subPage.newTab">
+                  <a :href="subPage.path" target="_blank" class="banner">
+                    <img :src="subPage.image.path" :alt="subPage.image.alt" />
+                  </a>
+                  <a
+                    class="navLink"
+                    v-for="link in subPage.links"
+                    :key="link.to"
+                    :href="subPage.path + '/' + link.to"
+                    target="_blank"
+                  >
+                    {{ link.name }}
+                  </a>
+                </template>
+                <template v-else>
+                  <router-link :to="subPage.path" class="banner">
+                    <img :src="subPage.image.path" :alt="subPage.image.alt" />
+                  </router-link>
+                  <router-link
+                    class="navLink"
+                    v-for="link in subPage.links"
+                    :key="link.to"
+                    :to="subPage.path + '/' + link.to"
+                  >
+                    {{ link.name }}
+                  </router-link>
+                </template>
               </div>
             </div>
           </div>
