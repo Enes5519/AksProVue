@@ -44,7 +44,7 @@ export default {
         {{ name }}
       </router-link>
     </template>
-    <template #products>
+    <template #products v-if="$route.params.product === ''">
       <div class="products">
         <template v-for="product in category.products || category.productCount" :key="product.path">
           <template v-if="category.productCount === undefined">

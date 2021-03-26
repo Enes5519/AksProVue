@@ -1,4 +1,7 @@
 export default {
+  "": {
+    title: "Lütfen kategoriden ürün seçiniz.",
+  },
   "ayarli-karsilik": {
     title: "Ayarlı Karşılık",
     products: [

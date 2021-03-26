@@ -24,7 +24,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "kompozit-paneller" */ "../views/kompozit-paneller/KompozitPanel.vue"),
   },
   {
-    path: "/aksesuarlar/akspro/:product",
+    path: "/aksesuarlar/akspro/:product?",
     name: "AksProAksesuarlar",
     component: () => import(/* webpackChunkName: "akspro-aksesuarlar" */ "../views/aksesuarlar/AksPro.vue"),
   },
