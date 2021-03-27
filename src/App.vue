@@ -14,5 +14,6 @@ export default {
     Header,
     Footer,
   },
+  title: "Aks & Pro",
 };
 </script>
