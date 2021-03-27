@@ -109,7 +109,7 @@ export default {
                     class="navLink"
                     v-for="link in subPage.links"
                     :key="link.to"
-                    :href="subPage.path + '/' + link.to"
+                    :href="subPage.path + link.to"
                     target="_blank"
                   >
                     {{ link.name }}
