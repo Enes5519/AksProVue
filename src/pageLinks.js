@@ -4,7 +4,7 @@ export default [
     subPages: [
       {
         image: {
-          path: require("@/assets/images/companies/rescara-logo.png"),
+          path: "/cdn/images/companies/rescara-logo.png",
           alt: "Rescara Logo",
         },
         path: "/profil-serileri/rescara",
@@ -37,7 +37,7 @@ export default [
       },
       {
         image: {
-          path: require("@/assets/images/companies/almin-logo.png"),
+          path: "/cdn/images/companies/almin-logo.png",
           alt: "Almin Logo",
         },
         path: "/profil-serileri/almin",
@@ -75,7 +75,7 @@ export default [
     subPages: [
       {
         image: {
-          path: require("@/assets/images/companies/naturalbond-logo.png"),
+          path: "/cdn/images/companies/naturalbond-logo.png",
           alt: "Naturalbond Logo",
         },
         path: "/kompozit-paneller/naturalbond",
@@ -88,7 +88,7 @@ export default [
       },
       {
         image: {
-          path: require("@/assets/images/companies/akpa-logo.png"),
+          path: "/cdn/images/companies/akpa-logo.png",
           alt: "Akpa Logo",
         },
         path: "/kompozit-paneller/akpa",
@@ -106,7 +106,7 @@ export default [
     subPages: [
       {
         image: {
-          path: require("@/assets/images/logo-text.png"),
+          path: "/cdn/images/logo-text.png",
           alt: "Aks & Pro Logo",
         },
         path: "/aksesuarlar/akspro",
@@ -139,11 +139,11 @@ export default [
       },
       {
         image: {
-          path: require("@/assets/images/companies/akpa-logo.png"),
+          path: "/cdn/images/companies/akpa-logo.png",
           alt: "Akpa Logo",
         },
         newTab: true,
-        path: require("@/assets/pdf/aksesuarlar/akpa-kupeste-katalogu.pdf"),
+        path: "/cdn/pdf/aksesuarlar/akpa-kupeste-katalogu.pdf",
         links: [
           {
             name: "Küpeşte Kataloğu",
@@ -153,7 +153,7 @@ export default [
       },
       {
         image: {
-          path: require("@/assets/images/companies/soudal-logo.png"),
+          path: "/cdn/images/companies/soudal-logo.png",
           alt: "Soudal Logo",
         },
         path: "/aksesuarlar/soudal",

@@ -27,7 +27,7 @@ export default {
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
-      return require(`@/assets/images/profil-sistemleri/almin/${productPath + "/"}${path}.jpg`);
+      return `/cdn/images/profil-sistemleri/almin/${productPath + "/"}${path}.jpg`;
     },
     setZoomImage(zoomImagePath, zoomImageAlt) {
       this.zoomImagePath = zoomImagePath;

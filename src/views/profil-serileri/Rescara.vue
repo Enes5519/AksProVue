@@ -20,7 +20,7 @@ export default {
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
-      return require(`@/assets/images/profil-sistemleri/rescara/${productPath === "" ? "" : productPath + "/"}${path}`);
+      return `/cdn/images/profil-sistemleri/rescara/${productPath === "" ? "" : productPath + "/"}${path}`;
     },
   },
   computed: {

@@ -27,7 +27,7 @@ export default {
   methods: {
     getImagePath(path) {
       const productPath = this.$route.params.product;
-      return require(`@/assets/images/aksesuarlar/${productPath === "" ? "" : productPath + "/"}${path}`);
+      return `/cdn/images/aksesuarlar/${productPath === "" ? "" : productPath + "/"}${path}`;
     },
     setZoomImage(zoomImagePath, zoomImageAlt) {
       this.zoomImagePath = zoomImagePath;

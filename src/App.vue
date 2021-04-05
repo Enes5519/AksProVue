@@ -14,6 +14,6 @@ export default {
     Header,
     Footer,
   },
-  title: "Aks & Pro",
+  title: "Alüminyum Profil Sistemleri, Kompozit Panel, Zengin Aksesuar Çeşitleri ve Proje Çözüm Merkezi",
 };
 </script>

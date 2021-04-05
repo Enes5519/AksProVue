@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     getImagePath(path) {
-      return require(`@/assets/images/aksesuarlar/soudal/${path}`);
+      return `/cdn/images/aksesuarlar/soudal/${path}`;
     },
   },
 };

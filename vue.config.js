@@ -1,4 +1,13 @@
 module.exports = {
+  devServer: {
+    proxy: {
+      "^/cdn": {
+        target: "https://cdn.akspro.com.tr",
+        changeOrigin: true,
+        pathRewrite: { "^/cdn": "/" },
+      },
+    },
+  },
   css: {
     loaderOptions: {
       sass: {
@@ -7,17 +16,11 @@ module.exports = {
     },
   },
   chainWebpack: (config) => {
-    config.module
-      .rule("pdf")
-      .test(/\.pdf$/)
-      .use("file-loader")
-      .loader("file-loader");
-
     const svgRule = config.module.rule("svg");
-
     svgRule.uses.clear();
 
     svgRule
+      .test(/\.svg$/)
       .use("vue-loader")
       .loader("vue-loader-v16") // or `vue-loader-v16` if you are using a preview support of Vue 3 in Vue CLI
       .end()

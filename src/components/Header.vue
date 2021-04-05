@@ -81,7 +81,7 @@ export default {
     <section class="navigation">
       <div class="container">
         <router-link to="/">
-          <img src="@/assets/images/logo-text.png" alt="Aks &amp; Pro Logo" />
+          <img src="/cdn/images/logo-text.png" alt="Aks &amp; Pro Logo" />
         </router-link>
         <div class="mobile-menu" @click="toggleMobileMenu">
           <HamburgerMenuIcon />

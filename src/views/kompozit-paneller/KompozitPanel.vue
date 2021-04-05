@@ -17,10 +17,10 @@ export default {
   },
   methods: {
     getImagePath(path) {
-      return require(`@/assets/images/kompozit-paneller/${path}`);
+      return `/cdn/images/kompozit-paneller/${path}`;
     },
     getPDFPath(path) {
-      return require(`@/assets/pdf/kompozit-paneller/${path}`);
+      return `/cdn/pdf/kompozit-paneller/${path}`;
     },
   },
 };
