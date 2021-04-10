@@ -38,7 +38,9 @@ export default {
       this.mobileMenu = !this.mobileMenu;
     },
     toggleDropdown(pageName) {
-      if (this.activeDropdown === pageName) {
+      if (this.mobileMenu) {
+        this.mobileMenu = false;
+      } else if (this.activeDropdown === pageName) {
         this.activeDropdown = undefined;
       } else {
         this.activeDropdown = pageName;
