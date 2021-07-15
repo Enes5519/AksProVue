@@ -40,7 +40,7 @@ export default {
 <template>
   <product-list v-if="category !== undefined" :title="category.title">
     <template #category>
-      <router-link v-for="(name, path) in categoryNames" :key="name" :to="path">
+      <router-link v-for="(name, path) in categoryNames" :key="name" :to="'/profil-serileri/almin/' + path">
         {{ name }}
       </router-link>
     </template>
